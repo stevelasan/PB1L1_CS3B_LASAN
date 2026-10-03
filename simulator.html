@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Unang Blockchain ni Mayor R jay</title>
+        <link rel="stylesheet" href="sim.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Ang Unang Blockchain ni MAyor R Jay</h1>
+            <p class="subtitle">Add block, inspect hashes, and see how tampering works in PB.</p>
+
+            <section class="controls">
+                <input id="blockData" class="input" type="text" placeholder="Enter Block Data">
+                <button id="addBlockBtn">Add Block</button>
+                <button id="validateBtn">Validate Chain</button>
+            </section>
+
+            <section>
+                <div id="chain" class="chain"></div>
+            </section>
+
+            <section>
+                <h2>Chain Status</h2>
+                <div id="status" class="status valid">Chain is Valid</div>
+            </section>
+        </div>
+
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/crypto-js.min.js"></script>
+        <script src="js/sim.js"></script>
+    </body>
+  </html>
